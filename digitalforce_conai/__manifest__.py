@@ -3,17 +3,24 @@
     'version': '19.0.1.0.1',
     'summary': 'Contributo ambientale CONAI automatico sulle fatture clienti',
     'description': """
-        Gestisce il contributo ambientale CONAI (Consorzio Nazionale Imballaggi)
-        per le aziende italiane. Funzionalità:
-        - Tassonomia completa di materiali e fasce (Plastica, Carta, Acciaio, Alluminio, Vetro, Legno)
-        - Tariffe con decorrenza per data (più periodi)
-        - Supporto per materiali compositi per prodotto
-        - Gestione delle esenzioni a livello di partner
-        - Generazione automatica delle righe CONAI sulle fatture clienti (solo partner italiani)
-    """,
-    'author': 'DigitalForce',
+    Gestisce il contributo ambientale CONAI (Consorzio Nazionale Imballaggi)
+    per le aziende italiane. Funzionalità:
+    - Tassonomia completa di materiali e fasce (Plastica, Carta, Acciaio, Alluminio, Vetro, Legno)
+    - Tariffe con decorrenza per data (più periodi)
+    - Supporto per materiali compositi per prodotto
+    - Gestione delle esenzioni a livello di partner
+    - Generazione automatica delle righe CONAI sulle fatture clienti (solo partner italiani)
+
+    Licenza per singolo database Odoo. Per l'utilizzo su più database
+    (es. più clienti, ambienti di test/produzione separati) è necessaria
+    una licenza per ciascun database. Contattare support@digitalforce.it
+    per licenze multiple.
+""",
+ 'author': 'DigitalForce',
     'website': 'https://www.digitalforce.it',
     'license': 'OPL-1',
+    'price': 499.00,
+    'currency': 'EUR',
     'category': 'Accounting/Accounting',
     'depends': ['account', 'product', 'base'],
     'data': [

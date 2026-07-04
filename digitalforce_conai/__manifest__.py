@@ -32,6 +32,7 @@
         'views/conai_menu.xml',
         'wizard/conai_setup_wizard_views.xml',
     ],
+    'images': ['static/description/main_screenshot.png'],
     'installable': True,
     'application': False,
     'auto_install': False,

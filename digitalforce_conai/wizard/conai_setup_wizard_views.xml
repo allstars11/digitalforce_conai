@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_conai_setup_wizard" model="ir.ui.view">
+        <field name="name">conai.setup.wizard.form</field>
+        <field name="model">conai.setup.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Configurazione iniziale CONAI">
+                <sheet>
+                    <div class="alert alert-info">
+                        <p><strong>Benvenuto in Conformità CONAI.</strong></p>
+                        <p>Selezionare il conto ricavi e l'IVA da utilizzare
+                           per le righe di contributo CONAI sulle fatture clienti.
+                           Queste impostazioni possono essere modificate in seguito in
+                           Fatturazione → Configurazione → CONAI.</p>
+                    </div>
+                    <group>
+                        <field name="account_id"/>
+                        <field name="default_tax_id"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_confirm" type="object"
+                            string="Conferma" class="btn-primary"/>
+                    <button special="cancel" string="Salta per ora"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

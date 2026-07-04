@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_conai_material_user,conai.material user,model_conai_material,account.group_account_user,1,0,0,0
+access_conai_material_manager,conai.material manager,model_conai_material,account.group_account_manager,1,1,1,1
+access_conai_band_user,conai.band user,model_conai_band,account.group_account_user,1,0,0,0
+access_conai_band_manager,conai.band manager,model_conai_band,account.group_account_manager,1,1,1,1
+access_conai_rate_user,conai.rate user,model_conai_rate,account.group_account_user,1,0,0,0
+access_conai_rate_manager,conai.rate manager,model_conai_rate,account.group_account_manager,1,1,1,1
+access_conai_product_line_user,conai.product.line user,model_conai_product_line,account.group_account_user,1,0,0,0
+access_conai_product_line_manager,conai.product.line manager,model_conai_product_line,account.group_account_manager,1,1,1,1
+access_conai_exemption_user,conai.exemption user,model_conai_exemption,account.group_account_user,1,0,0,0
+access_conai_exemption_manager,conai.exemption manager,model_conai_exemption,account.group_account_manager,1,1,1,1
+access_conai_setup_wizard,conai.setup.wizard,model_conai_setup_wizard,account.group_account_manager,1,1,1,1

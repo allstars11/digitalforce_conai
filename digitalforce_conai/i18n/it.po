@@ -1,0 +1,328 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* digitalforce_conai
+#
+# Translators:
+# DigitalForce <info@digitalforce.it>, 2026
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260619\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 08:02+0000\n"
+"PO-Revision-Date: 2026-07-03 08:02+0000\n"
+"Last-Translator: DigitalForce <info@digitalforce.it>\n"
+"Language-Team: Italian <it@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: digitalforce_conai
+msgid "# Bands"
+msgstr "# Fasce"
+
+#. module: digitalforce_conai
+msgid "<strong>Welcome to CONAI Compliance.</strong>"
+msgstr "<strong>Benvenuto in Conformità CONAI.</strong>"
+
+#. module: digitalforce_conai
+msgid "Account used for CONAI contribution invoice lines."
+msgstr "Conto utilizzato per le righe di contributo CONAI in fattura."
+
+#. module: digitalforce_conai
+msgid "Active"
+msgstr "Attivo"
+
+#. module: digitalforce_conai
+msgid "Aluminium"
+msgstr "Alluminio"
+
+#. module: digitalforce_conai
+msgid "Band"
+msgstr "Fascia"
+
+#. module: digitalforce_conai
+msgid "Band 1 – Single-material"
+msgstr "Fascia 1 – Monomateriale"
+
+#. module: digitalforce_conai
+msgid "Band 2 – Type A Composites"
+msgstr "Fascia 2 – Compositi tipo A"
+
+#. module: digitalforce_conai
+msgid "Band 3.1 – Type B1 Composites (Certified)"
+msgstr "Fascia 3.1 – Compositi tipo B1 (Certificati)"
+
+#. module: digitalforce_conai
+msgid "Band 3.2 – Type B2 Composites (Non-certified)"
+msgstr "Fascia 3.2 – Compositi tipo B2 (Non certificati)"
+
+#. module: digitalforce_conai
+msgid "Band 4 – CPL"
+msgstr "Fascia 4 – CPL"
+
+#. module: digitalforce_conai
+msgid "Band 5.1 – Type C1 Composites (Certified)"
+msgstr "Fascia 5.1 – Compositi tipo C1 (Certificati)"
+
+#. module: digitalforce_conai
+msgid "Band 5.2 – Type C2 Composites (Non-certified)"
+msgstr "Fascia 5.2 – Compositi tipo C2 (Non certificati)"
+
+#. module: digitalforce_conai
+msgid "Band 6 – Type D Composites"
+msgstr "Fascia 6 – Compositi tipo D"
+
+#. module: digitalforce_conai
+msgid "Band A1.1"
+msgstr "Fascia A1.1"
+
+#. module: digitalforce_conai
+msgid "Band A1.2"
+msgstr "Fascia A1.2"
+
+#. module: digitalforce_conai
+msgid "Band A2"
+msgstr "Fascia A2"
+
+#. module: digitalforce_conai
+msgid "Band B1.1"
+msgstr "Fascia B1.1"
+
+#. module: digitalforce_conai
+msgid "Band B1.2"
+msgstr "Fascia B1.2"
+
+#. module: digitalforce_conai
+msgid "Band B2.1"
+msgstr "Fascia B2.1"
+
+#. module: digitalforce_conai
+msgid "Band B2.2"
+msgstr "Fascia B2.2"
+
+#. module: digitalforce_conai
+msgid "Band B2.3"
+msgstr "Fascia B2.3"
+
+#. module: digitalforce_conai
+msgid "Band C"
+msgstr "Fascia C"
+
+#. module: digitalforce_conai
+msgid "Bands"
+msgstr "Fasce"
+
+#. module: digitalforce_conai
+msgid "Biodegradable and Compostable Plastic"
+msgstr "Plastica biodegradabile e compostabile"
+
+#. module: digitalforce_conai
+msgid "CONAI"
+msgstr "CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI Exemptions"
+msgstr "Esenzioni CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI Initial Setup"
+msgstr "Configurazione iniziale CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI Lines Generated"
+msgstr "Righe CONAI generate"
+
+#. module: digitalforce_conai
+msgid "CONAI Material"
+msgstr "Materiale CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI Material Band"
+msgstr "Fascia materiale CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI Materials"
+msgstr "Materiali CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI Partner Exemption"
+msgstr "Esenzione CONAI partner"
+
+#. module: digitalforce_conai
+msgid "CONAI Product Material Line"
+msgstr "Riga materiale CONAI prodotto"
+
+#. module: digitalforce_conai
+msgid "CONAI Revenue Account"
+msgstr "Conto ricavi CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI Setup"
+msgstr "Configurazione CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI Tariff Rate"
+msgstr "Tariffa CONAI"
+
+#. module: digitalforce_conai
+msgid "CONAI contribution in EUR per tonne of packaging material."
+msgstr "Contributo CONAI in EUR per tonnellata di materiale da imballaggio."
+
+#. module: digitalforce_conai
+msgid "CONAI lines can only be generated on draft invoices."
+msgstr "Le righe CONAI possono essere generate solo su fatture in bozza."
+
+#. module: digitalforce_conai
+msgid "Confirm"
+msgstr "Conferma"
+
+#. module: digitalforce_conai
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: digitalforce_conai
+msgid "Default VAT"
+msgstr "IVA predefinita"
+
+#. module: digitalforce_conai
+msgid "Default VAT on CONAI lines"
+msgstr "IVA predefinita sulle righe CONAI"
+
+#. module: digitalforce_conai
+msgid "Define one line per packaging material component. For composite packaging, add multiple lines."
+msgstr "Definire una riga per ogni componente di materiale da imballaggio. Per imballaggi compositi, aggiungere più righe."
+
+#. module: digitalforce_conai
+msgid "Effective From"
+msgstr "Valido dal"
+
+#. module: digitalforce_conai
+msgid "Exemption %"
+msgstr "Esenzione %"
+
+#. module: digitalforce_conai
+msgid "Exemption %.0f%% — exempt quantity: %.4f kg"
+msgstr "Esenzione %.0f%% — quantità esente: %.4f kg"
+
+#. module: digitalforce_conai
+msgid "Exemption rate must be between 0 and 100%."
+msgstr "Il tasso di esenzione deve essere compreso tra 0 e 100%%."
+
+#. module: digitalforce_conai
+msgid "Fully Exempt from CONAI"
+msgstr "Esente totalmente da CONAI"
+
+#. module: digitalforce_conai
+msgid "Glass"
+msgstr "Vetro"
+
+#. module: digitalforce_conai
+msgid "If checked, no CONAI lines will be generated for this partner regardless of material configuration."
+msgstr "Se selezionato, nessuna riga CONAI verrà generata per questo partner indipendentemente dalla configurazione del materiale."
+
+#. module: digitalforce_conai
+msgid "Is CONAI Contribution Product"
+msgstr "È un prodotto di contributo CONAI"
+
+#. module: digitalforce_conai
+msgid "Journal Entry"
+msgstr "Registrazione contabile"
+
+#. module: digitalforce_conai
+msgid "Material"
+msgstr "Materiale"
+
+#. module: digitalforce_conai
+msgid "Material-level CONAI exemptions negotiated with this partner. Only applicable to Italian partners."
+msgstr "Esenzioni CONAI per materiale negoziate con questo partner. Applicabile solo ai partner italiani."
+
+#. module: digitalforce_conai
+msgid "Materials"
+msgstr "Materiali"
+
+#. module: digitalforce_conai
+msgid "Materials & Bands"
+msgstr "Materiali e fasce"
+
+#. module: digitalforce_conai
+msgid "Paper"
+msgstr "Carta"
+
+#. module: digitalforce_conai
+msgid "Partner"
+msgstr "Partner"
+
+#. module: digitalforce_conai
+msgid "Percentage of CONAI contribution exempt for this partner on this material. E.g. 89 means 89% discount on the CONAI line."
+msgstr "Percentuale di contributo CONAI esente per questo partner su questo materiale. Es. 89 significa sconto dell'89%% sulla riga CONAI."
+
+#. module: digitalforce_conai
+msgid "Plastic"
+msgstr "Plastica"
+
+#. module: digitalforce_conai
+msgid "Please select the revenue account and VAT tax to use\n                           for CONAI contribution lines on customer invoices.\n                           These settings can be changed later under\n                           Accounting → Configuration → CONAI."
+msgstr "Selezionare il conto ricavi e l'IVA da utilizzare\nper le righe di contributo CONAI sulle fatture clienti.\nQueste impostazioni possono essere modificate in seguito in\nFatturazione → Configurazione → CONAI."
+
+#. module: digitalforce_conai
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: digitalforce_conai
+msgid "Rate (€/kg)"
+msgstr "Tariffa (€/kg)"
+
+#. module: digitalforce_conai
+msgid "Rate (€/t)"
+msgstr "Tariffa (€/t)"
+
+#. module: digitalforce_conai
+msgid "Rates"
+msgstr "Tariffe"
+
+#. module: digitalforce_conai
+msgid "Regenerate CONAI"
+msgstr "Rigenera CONAI"
+
+#. module: digitalforce_conai
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: digitalforce_conai
+msgid "Skip for now"
+msgstr "Salta per ora"
+
+#. module: digitalforce_conai
+msgid "Steel"
+msgstr "Acciaio"
+
+#. module: digitalforce_conai
+msgid "Tariff Rates"
+msgstr "Tariffe"
+
+#. module: digitalforce_conai
+msgid "Technical Code"
+msgstr "Codice tecnico"
+
+#. module: digitalforce_conai
+msgid "VAT applied on CONAI invoice lines for this band. CONAI is not a tax itself — VAT applies on top."
+msgstr "IVA applicata sulle righe CONAI per questa fascia. Il CONAI non è un'imposta — l'IVA si applica in aggiunta."
+
+#. module: digitalforce_conai
+msgid "VAT applied on CONAI lines. CONAI is not a tax — VAT applies on top. Typically 22% for Italian companies."
+msgstr "IVA applicata sulle righe CONAI. Il CONAI non è un'imposta — l'IVA si applica in aggiunta. Tipicamente 22%% per le aziende italiane."
+
+#. module: digitalforce_conai
+msgid "Weight (kg/unit)"
+msgstr "Peso (kg/unità)"
+
+#. module: digitalforce_conai
+msgid "Weight in kg of this material component per unit of product. For composite products, add one line per material."
+msgstr "Peso in kg di questo componente materiale per unità di prodotto. Per prodotti compositi, aggiungere una riga per materiale."
+
+#. module: digitalforce_conai
+msgid "Wood"
+msgstr "Legno"

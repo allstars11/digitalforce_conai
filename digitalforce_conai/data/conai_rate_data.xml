@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+        <!-- ═══════════════════════════════════════════════════════
+             STEEL  —  5.00 €/t all 3 periods (no change)
+        ═══════════════════════════════════════════════════════ -->
+        <record id="rate_acciaio_jan26" model="conai.rate">
+            <field name="band_id" ref="band_acciaio"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">5.00</field>
+        </record>
+        <!-- ═══════════════════════════════════════════════════════
+             ALUMINIUM  —  12.00 €/t all 3 periods
+        ═══════════════════════════════════════════════════════ -->
+        <record id="rate_alluminio_jan26" model="conai.rate">
+            <field name="band_id" ref="band_alluminio"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">12.00</field>
+        </record>
+        <!-- ═══════════════════════════════════════════════════════
+             PAPER — Band 1 Single-material  45 €/t all periods
+        ═══════════════════════════════════════════════════════ -->
+        <record id="rate_carta_b1_jan26" model="conai.rate">
+            <field name="band_id" ref="band_carta_b1"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">45.00</field>
+        </record>
+        <!-- Band 2 Type A Composites  45 €/t -->
+        <record id="rate_carta_b2a_jan26" model="conai.rate">
+            <field name="band_id" ref="band_carta_b2a"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">45.00</field>
+        </record>
+        <!-- Band 3.1 B1 Certified  55 €/t -->
+        <record id="rate_carta_b31_jan26" model="conai.rate">
+            <field name="band_id" ref="band_carta_b31"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">55.00</field>
+        </record>
+        <!-- Band 3.2 B2 Non-certified  70 €/t -->
+        <record id="rate_carta_b32_jan26" model="conai.rate">
+            <field name="band_id" ref="band_carta_b32"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">70.00</field>
+        </record>
+        <!-- Band 4 CPL  115 €/t -->
+        <record id="rate_carta_b4_jan26" model="conai.rate">
+            <field name="band_id" ref="band_carta_b4"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">115.00</field>
+        </record>
+        <!-- Band 5.1 C1 Certified  110 €/t -->
+        <record id="rate_carta_b51_jan26" model="conai.rate">
+            <field name="band_id" ref="band_carta_b51"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">110.00</field>
+        </record>
+        <!-- Band 5.2 C2 Non-certified  155 €/t -->
+        <record id="rate_carta_b52_jan26" model="conai.rate">
+            <field name="band_id" ref="band_carta_b52"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">155.00</field>
+        </record>
+        <!-- Band 6 Type D  285 €/t -->
+        <record id="rate_carta_b6_jan26" model="conai.rate">
+            <field name="band_id" ref="band_carta_b6"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">285.00</field>
+        </record>
+        <!-- ═══════════════════════════════════════════════════════
+             WOOD  —  10.00 €/t all periods
+        ═══════════════════════════════════════════════════════ -->
+        <record id="rate_legno_jan26" model="conai.rate">
+            <field name="band_id" ref="band_legno"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">10.00</field>
+        </record>
+        <!-- ═══════════════════════════════════════════════════════
+             PLASTIC — rates change Oct 2026
+        ═══════════════════════════════════════════════════════ -->
+        <!-- A1.1: 40 / 40 / 51 -->
+        <record id="rate_plastica_a11_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_a11"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">40.00</field>
+        </record>
+        <record id="rate_plastica_a11_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_a11"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">51.00</field>
+        </record>
+        <!-- A1.2: 87 / 87 / 92 -->
+        <record id="rate_plastica_a12_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_a12"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">87.00</field>
+        </record>
+        <record id="rate_plastica_a12_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_a12"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">92.00</field>
+        </record>
+        <!-- A2: 258 / 258 / 264 -->
+        <record id="rate_plastica_a2_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_a2"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">258.00</field>
+        </record>
+        <record id="rate_plastica_a2_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_a2"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">264.00</field>
+        </record>
+        <!-- B1.1: 219 / 219 / 260 -->
+        <record id="rate_plastica_b11_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b11"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">219.00</field>
+        </record>
+        <record id="rate_plastica_b11_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b11"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">260.00</field>
+        </record>
+        <!-- B1.2: 228 / 228 / 304 -->
+        <record id="rate_plastica_b12_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b12"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">228.00</field>
+        </record>
+        <record id="rate_plastica_b12_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b12"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">304.00</field>
+        </record>
+        <!-- B2.1: 611 / 611 / 639 -->
+        <record id="rate_plastica_b21_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b21"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">611.00</field>
+        </record>
+        <record id="rate_plastica_b21_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b21"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">639.00</field>
+        </record>
+        <!-- B2.2: 724 / 724 / 856 -->
+        <record id="rate_plastica_b22_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b22"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">724.00</field>
+        </record>
+        <record id="rate_plastica_b22_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b22"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">856.00</field>
+        </record>
+        <!-- B2.3: 785 / 785 / 917 -->
+        <record id="rate_plastica_b23_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b23"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">785.00</field>
+        </record>
+        <record id="rate_plastica_b23_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_b23"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">917.00</field>
+        </record>
+        <!-- C: 790 / 790 / 922 -->
+        <record id="rate_plastica_c_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_c"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">790.00</field>
+        </record>
+        <record id="rate_plastica_c_oct26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_c"/>
+            <field name="date_from">2026-10-01</field>
+            <field name="rate_per_tonne">922.00</field>
+        </record>
+        <!-- ═══════════════════════════════════════════════════════
+             BIODEGRADABLE PLASTIC  —  130 / 246 / 246
+        ═══════════════════════════════════════════════════════ -->
+        <record id="rate_plastica_bio_jan26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_bio"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">130.00</field>
+        </record>
+        <record id="rate_plastica_bio_jul26" model="conai.rate">
+            <field name="band_id" ref="band_plastica_bio"/>
+            <field name="date_from">2026-07-01</field>
+            <field name="rate_per_tonne">246.00</field>
+        </record>
+        <!-- ═══════════════════════════════════════════════════════
+             GLASS  —  40 €/t all periods
+        ═══════════════════════════════════════════════════════ -->
+        <record id="rate_vetro_jan26" model="conai.rate">
+            <field name="band_id" ref="band_vetro"/>
+            <field name="date_from">2026-01-01</field>
+            <field name="rate_per_tonne">40.00</field>
+        </record>
+</odoo>

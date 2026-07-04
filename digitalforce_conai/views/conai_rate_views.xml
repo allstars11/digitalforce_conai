@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_conai_rate_list" model="ir.ui.view">
+        <field name="name">conai.rate.list</field>
+        <field name="model">conai.rate</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="material_id"/>
+                <field name="band_id"/>
+                <field name="date_from"/>
+                <field name="rate_per_tonne"/>
+                <field name="rate_per_kg"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_conai_rate" model="ir.actions.act_window">
+        <field name="name">Tariffe</field>
+        <field name="res_model">conai.rate</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>

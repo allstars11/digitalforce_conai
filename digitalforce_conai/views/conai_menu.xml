@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_conai_root"
+              name="CONAI"
+              parent="account.menu_finance_configuration"
+              sequence="100"/>
+
+    <menuitem id="menu_conai_materials"
+              name="Materiali e Fasce"
+              parent="menu_conai_root"
+              action="action_conai_material"
+              sequence="10"/>
+
+    <menuitem id="menu_conai_rates"
+              name="Tariffe"
+              parent="menu_conai_root"
+              action="action_conai_rate"
+              sequence="20"/>
+
+    <record id="action_conai_setup_wizard" model="ir.actions.act_window">
+        <field name="name">Configurazione CONAI</field>
+        <field name="res_model">conai.setup.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_conai_setup"
+              name="Configurazione CONAI"
+              parent="menu_conai_root"
+              action="action_conai_setup_wizard"
+              sequence="30"/>
+</odoo>

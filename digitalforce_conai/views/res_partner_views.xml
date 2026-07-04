@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_conai" model="ir.ui.view">
+        <field name="name">res.partner.conai</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="CONAI" name="conai"
+                      invisible="not is_italian_partner">
+                    <group>
+                        <field name="conai_exempt"/>
+                    </group>
+                    <field name="conai_exemption_ids"
+                           invisible="conai_exempt == True">
+                        <list editable="bottom">
+                            <field name="material_id"/>
+                            <field name="exemption_rate" string="Esenzione %"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

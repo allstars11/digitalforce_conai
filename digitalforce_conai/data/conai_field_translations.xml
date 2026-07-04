@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <!--
+        This module targets Italian companies only, so Italian is the single
+        source of truth for field labels — there is no separate i18n/it.po.
+        These records force field_description/help on every install and
+        upgrade, independent of ORM field reflection timing, so a running
+        database can never drift back to stale English labels.
+    -->
+
+    <!-- conai.material -->
+    <record id="field_conai_material__name" model="ir.model.fields">
+        <field name="field_description">Materiale</field>
+    </record>
+    <record id="field_conai_material__code" model="ir.model.fields">
+        <field name="field_description">Codice tecnico</field>
+    </record>
+    <record id="field_conai_material__sequence" model="ir.model.fields">
+        <field name="field_description">Sequenza</field>
+    </record>
+    <record id="field_conai_material__band_ids" model="ir.model.fields">
+        <field name="field_description">Fasce</field>
+    </record>
+    <record id="field_conai_material__active" model="ir.model.fields">
+        <field name="field_description">Attivo</field>
+    </record>
+
+    <!-- conai.band -->
+    <record id="field_conai_band__name" model="ir.model.fields">
+        <field name="field_description">Fascia</field>
+    </record>
+    <record id="field_conai_band__code" model="ir.model.fields">
+        <field name="field_description">Codice tecnico</field>
+    </record>
+    <record id="field_conai_band__material_id" model="ir.model.fields">
+        <field name="field_description">Materiale</field>
+    </record>
+    <record id="field_conai_band__sequence" model="ir.model.fields">
+        <field name="field_description">Sequenza</field>
+    </record>
+    <record id="field_conai_band__rate_ids" model="ir.model.fields">
+        <field name="field_description">Tariffe</field>
+    </record>
+    <record id="field_conai_band__active" model="ir.model.fields">
+        <field name="field_description">Attivo</field>
+    </record>
+    <record id="field_conai_band__default_tax_id" model="ir.model.fields">
+        <field name="field_description">IVA predefinita</field>
+        <field name="help">IVA applicata sulle righe CONAI per questa fascia. Il CONAI non è un'imposta — l'IVA si applica in aggiunta.</field>
+    </record>
+
+    <!-- conai.rate -->
+    <record id="field_conai_rate__band_id" model="ir.model.fields">
+        <field name="field_description">Fascia</field>
+    </record>
+    <record id="field_conai_rate__material_id" model="ir.model.fields">
+        <field name="field_description">Materiale</field>
+    </record>
+    <record id="field_conai_rate__date_from" model="ir.model.fields">
+        <field name="field_description">Valido dal</field>
+    </record>
+    <record id="field_conai_rate__rate_per_tonne" model="ir.model.fields">
+        <field name="field_description">Tariffa (€/t)</field>
+        <field name="help">Contributo CONAI in EUR per tonnellata di materiale da imballaggio.</field>
+    </record>
+    <record id="field_conai_rate__rate_per_kg" model="ir.model.fields">
+        <field name="field_description">Tariffa (€/kg)</field>
+    </record>
+
+    <!-- conai.exemption -->
+    <record id="field_conai_exemption__partner_id" model="ir.model.fields">
+        <field name="field_description">Partner</field>
+    </record>
+    <record id="field_conai_exemption__material_id" model="ir.model.fields">
+        <field name="field_description">Materiale</field>
+    </record>
+    <record id="field_conai_exemption__exemption_rate" model="ir.model.fields">
+        <field name="field_description">Esenzione %</field>
+        <field name="help">Percentuale di contributo CONAI esente per questo partner su questo materiale. Es. 89 significa sconto dell'89%% sulla riga CONAI.</field>
+    </record>
+
+    <!-- conai.product.line -->
+    <record id="field_conai_product_line__product_tmpl_id" model="ir.model.fields">
+        <field name="field_description">Prodotto</field>
+    </record>
+    <record id="field_conai_product_line__sequence" model="ir.model.fields">
+        <field name="field_description">Sequenza</field>
+    </record>
+    <record id="field_conai_product_line__material_id" model="ir.model.fields">
+        <field name="field_description">Materiale</field>
+    </record>
+    <record id="field_conai_product_line__band_id" model="ir.model.fields">
+        <field name="field_description">Fascia</field>
+    </record>
+    <record id="field_conai_product_line__weight_kg" model="ir.model.fields">
+        <field name="field_description">Peso (kg/unità)</field>
+        <field name="help">Peso in kg di questo componente materiale per unità di prodotto. Per prodotti compositi, aggiungere una riga per materiale.</field>
+    </record>
+
+    <!-- conai.setup.wizard -->
+    <record id="field_conai_setup_wizard__account_id" model="ir.model.fields">
+        <field name="field_description">Conto ricavi CONAI</field>
+        <field name="help">Conto utilizzato per le righe di contributo CONAI in fattura.</field>
+    </record>
+    <record id="field_conai_setup_wizard__default_tax_id" model="ir.model.fields">
+        <field name="field_description">IVA predefinita sulle righe CONAI</field>
+        <field name="help">IVA applicata sulle righe CONAI. Il CONAI non è un'imposta — l'IVA si applica in aggiunta.</field>
+    </record>
+
+    <!-- product.template / product.product -->
+    <record id="field_product_template__conai_line_ids" model="ir.model.fields">
+        <field name="field_description">Materiali CONAI</field>
+        <field name="help">Definire una riga per ogni componente di materiale da imballaggio. Per imballaggi compositi, aggiungere più righe.</field>
+    </record>
+    <record id="field_product_template__is_conai_product" model="ir.model.fields">
+        <field name="field_description">È un prodotto di contributo CONAI</field>
+        <field name="help">Contrassegnare questo prodotto come prodotto di contributo CONAI. Questi prodotti vengono iniettati automaticamente.</field>
+    </record>
+    <record id="field_product_product__conai_line_ids" model="ir.model.fields">
+        <field name="field_description">Materiali CONAI</field>
+        <field name="help">Definire una riga per ogni componente di materiale da imballaggio. Per imballaggi compositi, aggiungere più righe.</field>
+    </record>
+    <record id="field_product_product__is_conai_product" model="ir.model.fields">
+        <field name="field_description">È un prodotto di contributo CONAI</field>
+        <field name="help">Contrassegnare questo prodotto come prodotto di contributo CONAI. Questi prodotti vengono iniettati automaticamente.</field>
+    </record>
+
+    <!-- res.partner / res.users -->
+    <record id="field_res_partner__conai_exempt" model="ir.model.fields">
+        <field name="field_description">Esente totalmente da CONAI</field>
+        <field name="help">Se selezionato, nessuna riga CONAI verrà generata per questo partner.</field>
+    </record>
+    <record id="field_res_partner__conai_exemption_ids" model="ir.model.fields">
+        <field name="field_description">Esenzioni CONAI</field>
+        <field name="help">Esenzioni CONAI per materiale negoziate con questo partner. Applicabile solo ai partner italiani.</field>
+    </record>
+    <record id="field_res_partner__is_italian_partner" model="ir.model.fields">
+        <field name="field_description">Partner italiano</field>
+    </record>
+    <record id="field_res_users__conai_exempt" model="ir.model.fields">
+        <field name="field_description">Esente totalmente da CONAI</field>
+        <field name="help">Se selezionato, nessuna riga CONAI verrà generata per questo partner.</field>
+    </record>
+    <record id="field_res_users__conai_exemption_ids" model="ir.model.fields">
+        <field name="field_description">Esenzioni CONAI</field>
+        <field name="help">Esenzioni CONAI per materiale negoziate con questo partner. Applicabile solo ai partner italiani.</field>
+    </record>
+    <record id="field_res_users__is_italian_partner" model="ir.model.fields">
+        <field name="field_description">Partner italiano</field>
+    </record>
+</odoo>

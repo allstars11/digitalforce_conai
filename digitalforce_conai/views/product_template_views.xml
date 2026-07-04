@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_template_conai" model="ir.ui.view">
+        <field name="name">product.template.conai</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="CONAI" name="conai">
+                    <group>
+                        <field name="is_conai_product"/>
+                    </group>
+                    <field name="conai_line_ids"
+                           invisible="is_conai_product == True">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="material_id"/>
+                            <field name="band_id"
+                                   domain="[('material_id', '=', material_id)]"/>
+                            <field name="weight_kg"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

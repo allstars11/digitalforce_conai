@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_conai_band_form" model="ir.ui.view">
+        <field name="name">conai.band.form</field>
+        <field name="model">conai.band</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="material_id"/>
+                            <field name="name"/>
+                            <field name="code"/>
+                        </group>
+                        <group>
+                            <field name="default_tax_id"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Tariffe">
+                            <field name="rate_ids">
+                                <list editable="bottom">
+                                    <field name="date_from"/>
+                                    <field name="rate_per_tonne"/>
+                                    <field name="rate_per_kg"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_conai_band_list" model="ir.ui.view">
+        <field name="name">conai.band.list</field>
+        <field name="model">conai.band</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="material_id"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="default_tax_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_conai_band" model="ir.actions.act_window">
+        <field name="name">Fasce</field>
+        <field name="res_model">conai.band</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

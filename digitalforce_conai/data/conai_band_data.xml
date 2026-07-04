@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+        <!-- Steel: single band -->
+        <record id="band_acciaio" model="conai.band">
+            <field name="name">Acciaio</field>
+            <field name="code">ACCIAIO</field>
+            <field name="material_id" ref="material_acciaio"/>
+            <field name="sequence">10</field>
+        </record>
+        <!-- Aluminium: single band -->
+        <record id="band_alluminio" model="conai.band">
+            <field name="name">Alluminio</field>
+            <field name="code">ALLUMINIO</field>
+            <field name="material_id" ref="material_alluminio"/>
+            <field name="sequence">10</field>
+        </record>
+        <!-- Paper: 7 bands -->
+        <record id="band_carta_b1" model="conai.band">
+            <field name="name">Fascia 1 – Monomateriale</field>
+            <field name="code">CARTA_B1</field>
+            <field name="material_id" ref="material_carta"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="band_carta_b2a" model="conai.band">
+            <field name="name">Fascia 2 – Compositi tipo A</field>
+            <field name="code">CARTA_B2A</field>
+            <field name="material_id" ref="material_carta"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="band_carta_b31" model="conai.band">
+            <field name="name">Fascia 3.1 – Compositi tipo B1 (Certificati)</field>
+            <field name="code">CARTA_B31</field>
+            <field name="material_id" ref="material_carta"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="band_carta_b32" model="conai.band">
+            <field name="name">Fascia 3.2 – Compositi tipo B2 (Non certificati)</field>
+            <field name="code">CARTA_B32</field>
+            <field name="material_id" ref="material_carta"/>
+            <field name="sequence">40</field>
+        </record>
+        <record id="band_carta_b4" model="conai.band">
+            <field name="name">Fascia 4 – CPL</field>
+            <field name="code">CARTA_B4</field>
+            <field name="material_id" ref="material_carta"/>
+            <field name="sequence">50</field>
+        </record>
+        <record id="band_carta_b51" model="conai.band">
+            <field name="name">Fascia 5.1 – Compositi tipo C1 (Certificati)</field>
+            <field name="code">CARTA_B51</field>
+            <field name="material_id" ref="material_carta"/>
+            <field name="sequence">60</field>
+        </record>
+        <record id="band_carta_b52" model="conai.band">
+            <field name="name">Fascia 5.2 – Compositi tipo C2 (Non certificati)</field>
+            <field name="code">CARTA_B52</field>
+            <field name="material_id" ref="material_carta"/>
+            <field name="sequence">70</field>
+        </record>
+        <record id="band_carta_b6" model="conai.band">
+            <field name="name">Fascia 6 – Compositi tipo D</field>
+            <field name="code">CARTA_B6</field>
+            <field name="material_id" ref="material_carta"/>
+            <field name="sequence">80</field>
+        </record>
+        <!-- Wood: single band -->
+        <record id="band_legno" model="conai.band">
+            <field name="name">Legno</field>
+            <field name="code">LEGNO</field>
+            <field name="material_id" ref="material_legno"/>
+            <field name="sequence">10</field>
+        </record>
+        <!-- Plastic: 9 bands -->
+        <record id="band_plastica_a11" model="conai.band">
+            <field name="name">Fascia A1.1</field>
+            <field name="code">PLASTICA_A11</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">10</field>
+        </record>
+        <record id="band_plastica_a12" model="conai.band">
+            <field name="name">Fascia A1.2</field>
+            <field name="code">PLASTICA_A12</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">20</field>
+        </record>
+        <record id="band_plastica_a2" model="conai.band">
+            <field name="name">Fascia A2</field>
+            <field name="code">PLASTICA_A2</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">30</field>
+        </record>
+        <record id="band_plastica_b11" model="conai.band">
+            <field name="name">Fascia B1.1</field>
+            <field name="code">PLASTICA_B11</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">40</field>
+        </record>
+        <record id="band_plastica_b12" model="conai.band">
+            <field name="name">Fascia B1.2</field>
+            <field name="code">PLASTICA_B12</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">50</field>
+        </record>
+        <record id="band_plastica_b21" model="conai.band">
+            <field name="name">Fascia B2.1</field>
+            <field name="code">PLASTICA_B21</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">60</field>
+        </record>
+        <record id="band_plastica_b22" model="conai.band">
+            <field name="name">Fascia B2.2</field>
+            <field name="code">PLASTICA_B22</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">70</field>
+        </record>
+        <record id="band_plastica_b23" model="conai.band">
+            <field name="name">Fascia B2.3</field>
+            <field name="code">PLASTICA_B23</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">80</field>
+        </record>
+        <record id="band_plastica_c" model="conai.band">
+            <field name="name">Fascia C</field>
+            <field name="code">PLASTICA_C</field>
+            <field name="material_id" ref="material_plastica"/>
+            <field name="sequence">90</field>
+        </record>
+        <!-- Biodegradable plastic: single band -->
+        <record id="band_plastica_bio" model="conai.band">
+            <field name="name">Plastica Biodegradabile e Compostabile</field>
+            <field name="code">PLASTICA_BIO</field>
+            <field name="material_id" ref="material_plastica_bio"/>
+            <field name="sequence">10</field>
+        </record>
+        <!-- Glass: single band -->
+        <record id="band_vetro" model="conai.band">
+            <field name="name">Vetro</field>
+            <field name="code">VETRO</field>
+            <field name="material_id" ref="material_vetro"/>
+            <field name="sequence">10</field>
+        </record>
+</odoo>

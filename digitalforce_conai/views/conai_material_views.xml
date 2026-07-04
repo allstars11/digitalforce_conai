@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_conai_material_form" model="ir.ui.view">
+        <field name="name">conai.material.form</field>
+        <field name="model">conai.material</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="sequence"/>
+                        <field name="active"/>
+                    </group>
+                    <notebook>
+                        <page string="Fasce">
+                            <field name="band_ids">
+                                <list>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="code"/>
+                                    <field name="default_tax_id"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_conai_material_list" model="ir.ui.view">
+        <field name="name">conai.material.list</field>
+        <field name="model">conai.material</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="band_ids" string="N. Fasce"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_conai_material" model="ir.actions.act_window">
+        <field name="name">Materiali</field>
+        <field name="res_model">conai.material</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

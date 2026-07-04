@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+        <!-- Product category for CONAI products -->
+        <record id="product_category_conai" model="product.category">
+            <field name="name">CONAI</field>
+        </record>
+        <!-- CONAI contribution products — one per band code matching band codes in data -->
+        <record id="product_tmpl_conai_acciaio" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Acciaio</field>
+            <field name="default_code">ACCIAIO</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_alluminio" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Alluminio</field>
+            <field name="default_code">ALLUMINIO</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_carta_b1" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Carta Fascia 1</field>
+            <field name="default_code">CARTA_B1</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_carta_b2a" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Carta Fascia 2A</field>
+            <field name="default_code">CARTA_B2A</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_carta_b31" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Carta Fascia 3.1</field>
+            <field name="default_code">CARTA_B31</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_carta_b32" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Carta Fascia 3.2</field>
+            <field name="default_code">CARTA_B32</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_carta_b4" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Carta Fascia 4 CPL</field>
+            <field name="default_code">CARTA_B4</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_carta_b51" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Carta Fascia 5.1</field>
+            <field name="default_code">CARTA_B51</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_carta_b52" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Carta Fascia 5.2</field>
+            <field name="default_code">CARTA_B52</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_carta_b6" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Carta Fascia 6</field>
+            <field name="default_code">CARTA_B6</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_legno" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Legno</field>
+            <field name="default_code">LEGNO</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_a11" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia A1.1</field>
+            <field name="default_code">PLASTICA_A11</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_a12" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia A1.2</field>
+            <field name="default_code">PLASTICA_A12</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_a2" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia A2</field>
+            <field name="default_code">PLASTICA_A2</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_b11" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia B1.1</field>
+            <field name="default_code">PLASTICA_B11</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_b12" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia B1.2</field>
+            <field name="default_code">PLASTICA_B12</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_b21" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia B2.1</field>
+            <field name="default_code">PLASTICA_B21</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_b22" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia B2.2</field>
+            <field name="default_code">PLASTICA_B22</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_b23" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia B2.3</field>
+            <field name="default_code">PLASTICA_B23</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_c" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Fascia C</field>
+            <field name="default_code">PLASTICA_C</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_plastica_bio" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Plastica Biodegradabile</field>
+            <field name="default_code">PLASTICA_BIO</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+        <record id="product_tmpl_conai_vetro" model="product.template">
+            <field name="name">Contributo Ambientale CONAI Vetro</field>
+            <field name="default_code">VETRO</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="categ_id" ref="product_category_conai"/>
+            <field name="is_conai_product">True</field>
+            <field name="sale_ok">True</field>
+            <field name="purchase_ok">False</field>
+        </record>
+</odoo>

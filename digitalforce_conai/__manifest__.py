@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 {
     'name': 'Conformità CONAI',
     'version': '19.0.1.0.1',
@@ -10,13 +11,12 @@
     - Supporto per materiali compositi per prodotto
     - Gestione delle esenzioni a livello di partner
     - Generazione automatica delle righe CONAI sulle fatture clienti (solo partner italiani)
-
     Licenza per singolo database Odoo. Per l'utilizzo su più database
     (es. più clienti, ambienti di test/produzione separati) è necessaria
     una licenza per ciascun database. Contattare support@digitalforce.it
     per licenze multiple.
 """,
- 'author': 'DigitalForce',
+    'author': 'DigitalForce',
     'website': 'https://www.digitalforce.it',
     'license': 'OPL-1',
     'price': 499.00,
@@ -43,4 +43,5 @@
     'installable': True,
     'application': False,
     'auto_install': False,
+    'post_init_hook': 'post_init_hook',
 }
